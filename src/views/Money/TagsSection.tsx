@@ -41,7 +41,6 @@ const TagsSection: React.FC = (props) => {
     const [selectedTags, setSelectedTags] = useState<string[]>([]);
     const onAddTag = () => {
         const tagName = window.prompt('新标签的名称为');
-        console.log(tagName);
         if (tagName !== null) {
             setTags([...tags, tagName]);
         }
