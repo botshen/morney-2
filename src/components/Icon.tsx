@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 let importAll = (requireContext: __WebpackModuleApi.RequireContext) => requireContext.keys().forEach(requireContext);
 try {
@@ -14,7 +14,7 @@ const Icon = (props: Props) => {
         <svg className="icon">
             <use xlinkHref={'#' + props.name}/>
         </svg>
-    )
-}
+    );
+};
 
-export default Icon
+export default Icon;

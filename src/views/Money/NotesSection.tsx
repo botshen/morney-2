@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 const NotesSection = styled.section`
   background: #f5f5f5;
@@ -22,5 +22,5 @@ const NotesSection = styled.section`
       border: none;
     }
   }
-`
-export {NotesSection}
+`;
+export {NotesSection};

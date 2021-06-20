@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import React, {useState} from "react"
+import styled from 'styled-components';
+import React, {useState} from 'react';
 
 const Wrapper = styled.section`
   background: #FFFFFF;
@@ -35,26 +35,26 @@ const Wrapper = styled.section`
     color: #666;
     margin-top: 8px;
   }
-`
+`;
 const TagsSection: React.FC = (props) => {
-    const [tags, setTags] = useState<string[]>(['衣', '食', '住', '行'])
-    const [selectedTags, setSelectedTags] = useState<string[]>([])
+    const [tags, setTags] = useState<string[]>(['衣', '食', '住', '行']);
+    const [selectedTags, setSelectedTags] = useState<string[]>([]);
     const onAddTag = () => {
-        const tagName = window.prompt('新标签的名称为')
+        const tagName = window.prompt('新标签的名称为');
         console.log(tagName);
         if (tagName !== null) {
-            setTags([...tags, tagName])
+            setTags([...tags, tagName]);
         }
-    }
+    };
     const onToggleTag = (tag: string) => {
-        const index = selectedTags.indexOf(tag)
+        const index = selectedTags.indexOf(tag);
         if (index >= 0) {
-            setSelectedTags(selectedTags.filter(t => t !== tag))
+            setSelectedTags(selectedTags.filter(t => t !== tag));
         } else {
-            setSelectedTags([...selectedTags, tag])
+            setSelectedTags([...selectedTags, tag]);
         }
-    }
-    const getClass = (tag: string) => selectedTags.indexOf(tag) >= 0 ? 'selected' : ''
+    };
+    const getClass = (tag: string) => selectedTags.indexOf(tag) >= 0 ? 'selected' : '';
 
     return (
         <Wrapper>
@@ -62,7 +62,7 @@ const TagsSection: React.FC = (props) => {
                 {tags.map(tag =>
                     <li key={tag} onClick={
                         () => {
-                            onToggleTag(tag)
+                            onToggleTag(tag);
                         }
                     }
                         className={getClass(tag)}
@@ -71,8 +71,8 @@ const TagsSection: React.FC = (props) => {
             </ol>
             <button onClick={onAddTag}>新增标签</button>
         </Wrapper>
-    )
-}
+    );
+};
 
 
-export {TagsSection}
+export {TagsSection};

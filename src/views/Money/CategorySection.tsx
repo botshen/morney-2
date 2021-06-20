@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 const CategorySection = styled.section`
   font-size: 24px;
@@ -26,5 +26,5 @@ const CategorySection = styled.section`
 
     }
   }
-`
-export {CategorySection}
+`;
+export {CategorySection};

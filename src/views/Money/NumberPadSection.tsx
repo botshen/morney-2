@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 const NumberPadSection = styled.section`
   display: flex;
@@ -70,4 +70,4 @@ const NumberPadSection = styled.section`
     }
   }
 `;
-export {NumberPadSection}
+export {NumberPadSection};
