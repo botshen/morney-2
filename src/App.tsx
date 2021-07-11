@@ -3,6 +3,7 @@ import {HashRouter as Router, Switch, Route, Redirect} from 'react-router-dom';
 import Money from './views/Money';
 import Statistics from './views/Statistics';
 import Tags from './views/Tags';
+import {Tag} from './views/Tag';
 import NoMatch from './views/NoMatch';
 import styled from 'styled-components';
 
@@ -15,13 +16,16 @@ function App() {
         <AppWrapper>
             <Router>
                 <Switch>
-                    <Route path="/tags">
+                    <Route exact={true} path="/tags">
                         <Tags/>
                     </Route>
-                    <Route path="/money">
+                    <Route exact={true} path="/tags/:tag">
+                        <Tag/>
+                    </Route>
+                    <Route exact={true} path="/money">
                         <Money/>
                     </Route>
-                    <Route path="/statistics">
+                    <Route exact path="/statistics">
                         <Statistics/>
                     </Route>
                     <Redirect exact from="/" to="/money"/>
@@ -36,3 +40,4 @@ function App() {
 }
 
 export default App;
+
