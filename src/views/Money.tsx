@@ -7,7 +7,7 @@ import {NoteSection} from './Money/NoteSection';
 import {NumberPadSection} from './Money/NumberPadSection';
 
 const MyLayout = styled(Layout)`
-  display:flex;
+  display: flex;
   flex-direction: column;
 `;
 
@@ -25,6 +25,8 @@ function Money() {
     };
     return (
         <MyLayout>
+            {selected.note}
+            <hr/>
             <TagsSection value={selected.tagIds}
                          onChange={tagIds => onChange({tagIds})}/>
             <NoteSection value={selected.note}
