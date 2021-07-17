@@ -9,7 +9,13 @@ const Wrapper = styled.div`
 `;
 const Main = styled.div`
   flex-grow: 1;
-  overflow: auto;
+  overflow: -moz-scrollbars-none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  overflow: -moz-scrollbars-none;
 `;
 type Props = {
     className?: string;
