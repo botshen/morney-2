@@ -28,15 +28,15 @@ const NavWrapper = styled.nav`
         }
 
         &.selected {
-          color: red;
+          color: #6487fb;
 
           .icon {
-            fill: red;
+            fill: #6487fb;
           }
         }
       }
     }
-  }
+  } 
 `;
 
 const Nav = () => {

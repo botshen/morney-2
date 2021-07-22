@@ -3,6 +3,9 @@ import React, {useState} from 'react';
 
 const Wrapper = styled.section`
   font-size: 24px;
+  border-bottom-right-radius:10px;
+  border-bottom-left-radius:10px;
+  background: #6487fb;
 
   > ul {
     display: flex;
@@ -12,16 +15,20 @@ const Wrapper = styled.section`
       text-align: center;
       padding: 16px 0;
       position: relative;
+      color: white;
+      
 
       &.selected::after {
         content: '';
         display: block;
-        height: 3px;
-        background: #333;
+        height: 5px;
+        background: white;
         position: absolute;
-        bottom: 0;
-        width: 100%;
-        left: 0;
+        bottom: 5px;
+        width: 50%;
+        border-radius: 5px;
+        left: 50%;
+        transform: translate(-50%, -50%);
       }
     }
   }

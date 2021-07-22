@@ -7,7 +7,7 @@ import {useTags} from '../hooks/useTags';
 import day from 'dayjs';
 
 const CategoryWrapper = styled.div`
-  background: white;
+  
 `;
 
 const Item = styled.div`
@@ -17,6 +17,7 @@ const Item = styled.div`
   font-size: 18px;
   line-height: 20px;
   padding: 10px 16px;
+  
 
   > .note {
     margin-right: auto;

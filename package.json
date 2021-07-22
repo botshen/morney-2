@@ -1,7 +1,7 @@
 {
   "name": "morney-2",
   "version": "0.1.0",
-  "homepage": "https://botshen.github.io/morney-2-website/",
+    "homepage": "https://botshen.github.io/morney-2-website/",
   "private": true,
   "dependencies": {
     "@babel/core": "7.12.3",
