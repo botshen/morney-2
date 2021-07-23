@@ -25,18 +25,19 @@ const NavWrapper = styled.nav`
         .icon {
           width: 24px;
           height: 24px;
+          fill: #898989;
         }
 
         &.selected {
-          color: #6487fb;
+          color: #4e3f61;
 
           .icon {
-            fill: #6487fb;
+            fill: #4e3f61;
           }
         }
       }
     }
-  } 
+  }
 `;
 
 const Nav = () => {

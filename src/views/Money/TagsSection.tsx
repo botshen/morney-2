@@ -15,15 +15,16 @@ const Wrapper = styled.section`
     margin: 0 -12px;
 
     > li {
-      background: #D9D9D9;
-      border-radius: 18px;
+      background: #f3f3f3;
+      border-radius: 5px;
       display: inline-block;
       padding: 3px 18px;
       font-size: 14px;
       margin: 8px 12px;
+      color: #969696;
 
       &.selected {
-        background: #6487fb;
+        background: #4aca9a;
         color:white;  
       }
     }

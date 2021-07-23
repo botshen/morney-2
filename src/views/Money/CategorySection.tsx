@@ -5,7 +5,7 @@ const Wrapper = styled.section`
   font-size: 24px;
   border-bottom-right-radius:10px;
   border-bottom-left-radius:10px;
-  background: #6487fb;
+  background: #4e3f61;
 
   > ul {
     display: flex;

@@ -6,7 +6,7 @@ const Wrapper = styled.section`
 
   > .output {
     background: white;
-    color: red;
+    color: black;
     font-size: 36px;
     line-height: 72px;
     text-align: right;
@@ -17,11 +17,13 @@ const Wrapper = styled.section`
 
   > .pad {
     > button {
-      font-size: 20px;
+      font-size: 24px;
       float: left;
       width: 25%;
       height: 64px;
-      border: 1px solid #f7f8f8;
+      border: 1px solid #5a4a6e;
+      color: white;
+      border-radius: 0;
 
 
       &.ok {
@@ -34,39 +36,39 @@ const Wrapper = styled.section`
       }
 
       &:nth-child(1) {
-        background: white;
+        background: #4e3f61;
       }
 
       &:nth-child(2),
       &:nth-child(5) {
-        background: white;
+        background: #4e3f61;
       }
 
       &:nth-child(3),
       &:nth-child(6),
       &:nth-child(9) {
-        background: white;
+        background: #4e3f61;
       }
 
       &:nth-child(4),
       &:nth-child(7),
       &:nth-child(10) {
-        background: white;
+        background: #4e3f61;
       }
 
       &:nth-child(8),
       &:nth-child(11),
       &:nth-child(13) {
-        background: white;
+        background: #4e3f61;
       }
 
       &:nth-child(12) {
-        background: #6487fb;
+        background: #4aca9a;
         color: white;
       }
 
       &:nth-child(14) {
-        background: white;
+        background: #4e3f61;
       }
     }
   }
