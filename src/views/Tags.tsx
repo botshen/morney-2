@@ -7,6 +7,8 @@ import {Link} from 'react-router-dom';
 import {Button} from 'components/Button';
 import {Center} from 'components/Center';
 import {Space} from '../components/Space';
+import { observer } from 'mobx-react-lite'
+import { useStore } from '../store'
 
 const TagList = styled.ol`
   font-size: 16px;
@@ -29,6 +31,7 @@ const TagList = styled.ol`
 
 
 function Tags() {
+    console.log(useStore().tagsStore.tags);
     const {tags, addTag} = useTags();
     return (
         <Layout>
@@ -46,10 +49,10 @@ function Tags() {
                 <Space/>
                 <Space/>
                 <Space/>
-                <Button onClick={addTag}>新增标签</Button>
+                <Button onClick={addTag}>新增0标签</Button>
             </Center>
         </Layout>
     );
 }
 
-export default Tags;
+export default observer(Tags);
